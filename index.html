@@ -5,9 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AfriConnect Summit</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap^-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <script src="js/main.js"></script>
+   <header class="main-header">
+        <nav class="navbar">
+            <img src="images/africonnecte.jpg" alt="africonnecte.jpg">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="theme-toggle" aria-label="Changer de thème">🌙</button></li>
+            </ul>
+            </nav>
+    </header>
+    <!--comptenu principal-->
+    <main>
+    <!--section hero-->
+    <section class="hero">
+        <h1>AfriConnect Summit 2026</h1>
+        <p>Le sommet de l'innovation Africain, 17 Octobre 2026 Medina, Dakar, Sénégal</p>
+        <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">S'inscrire maintenant</a>
+                    <a href="programme.html" class="btn btn-secondary">Voir le programme</a>
+        </div>
+            <!--compteur à rebours en temps réel-->
+        <div class="compteur">
+            <h2>La conférence commence dans :</h2>
+            <div id="countdown">
+                 <span id="jours">00</span><small>Jours</small>
+                <span id="heures">00</span><small>Heures</small>
+                <span id="minutes">00</span><small>Minutes</small>
+                <span id="secondes">00</span><small>Secondes</small>
+            </div>
+        </div>
+    </section>
+    <!--section chiffres clés-->
+    <section>
+        <h2>Chiffres Clés</h2>
+        <div class="chiffres-container">
+        <p>1200+ Participants</p>
+        <p>48 Intervenants</p>
+        <p>3 jours</p>
+        <p>12 Pays</p>
+    </div>
+    </section>
+    <!--section pourquoi participer 3 arguments en flexbox-->
+    <section>
+    
+<h2>Pourquoi Participer ?</h2>
+<div class="Pourquoi-container">
+<div class="argument">
+    <div class="icon">🌐</div>
+<h2>Réseautage Panafricain</h2>
+<p>Rencontrez 500+ décideurs, investisseurs et fondateurs venus de 30 pays d'Africain.</p>
+</div>
+<div class="argument">
+    <div class="icon">💡</div>
+<h2>innovation & Fintech</h2>
+<p>Découvrez les derniéres tendances IA, Blochain et paiement Mobile made in Africa.</p>
+</div>
+<div class="argument">
+    <div class="icon">🚀</div>
+    <h2>Opportunités Business</h2>
+<p>Pitcher devant des investisseurs et signez des deals pour booster votre entreprise.</p>
+</div>
+</div>
+    </section>
+    <!--section intervenant-->
+    <section class="intervenants-section">
+        <h2>Intervenants Vedettes</h2>
+        <div class="grille-intervenants-accueil">
+            <div class="bloc-intervenant">
+            <div class="photo">
+                <img src="images/khadija.jpg" alt="khadija">
+            </div>
+        <h3>Khadija Fall</h3> 
+           <p class="titre">CEO TechAfrik</p>
+           <p class="pays">Sénégal</p>
+           </div>
+           <div class="bloc-intervenant">
+            <div class="photo">
+           <img src="images/jean.jpg" alt="jean">
+            </div>
+        <h3>Jean</h3> 
+        <p class="titre">Fondateur</p>
+           <p class="pays">France</p>
+            </div>
+            <div class="bloc-intervenant">
+            <div class="photo">
+           <img src="images/aissatou.jpg" alt="aissatou">
+            </div>
+        <h3>Aissatou Woury Diao</h3>
+        <p class="titre">Orange Digital</p>
+        <p class="pays">Canada</p>
+            </div>
+            <div class="bloc-intervenant">
+            <div class="photo">
+        <img src="images/ahmed.jpg" alt="ahmed">
+            </div> 
+        <h3>Ahmed Ndiaye</h3>
+         <p class="titre">CEO Fintech Hub</p>
+         <p class="pays">Sénégal</p>
+            </div>
+            </div>
+            <div class="Liens-intervenants-tous">
+        <a href="intervenants.html">voir tous les intervenants</a>
+        </div>
+    </section>
+    <!--section sponsors-->
+    <section class="sponsors-section">
+        <h2>Nos sponsors</h2>
+        <div class="sponsors-container">
+        <p>Sponsor Or</p>
+        <p>Sponsor Argent</p>
+        <p>Sponsor Bronze</p>
+        </div>
+    </section>
+    </main>
+    <!--pied de la page-->
+    <footer class="footer-container">
+        <div class="footer-col">
+            <h2>AfriConnect Summit 2026</h2>
+            <p>Le sommet de l'innovation Africaine.<br>15-17 Octobre 2026 - Medina Dakar</p>
+        </div>
+        <div class="footer-col">
+            <h2>Liens utiles</h2>
+            <a href="index.html">Accueil</a><br>
+            <a href="programme.html">Programme</a><br>
+            <a href="intervenants.html">Intervenants</a><br>
+            <a href="contact.html">Contact</a>
+
+        </div>
+        <div class="footer-col">
+            <h2>Contact & Réseaux</h2>
+                <div class="social-icons">
+            <p>Email: contact@africonnect.sn</p>
+            <p>Téléphone: +221 77 200 00 00</p>
+            <div class="reseaux">
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            </div>
+            </div>
+        </div>
+            </footer>
+            <!--boutton qui remonte en haute dela page-->
+          <button id="btn-top">⬆️</button>
+    <div class="footer-bottom">
+            <p>&copy;<span id="annee"></span>AfriConnect Summit.Tous droits réservés</p>
+            
+        </div>
+        <script src="js/main.js"></script>
 </body>
 </html>
