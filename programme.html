@@ -9,6 +9,157 @@
     
 </head>
 <body>
+    <header class="main-header">
+        <nav class="navbar">
+            <img src="images/africonnecte.jpg" alt="africonnecte.jpg">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html" class="active">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="theme-toggle" aria-label="Changer de thème">🌙</button></li>
+            </ul>
+            </nav>
+    </header>
+    <main>
+    <section class="hero-interne">
+        <h1>Planning des Conférences</h1>
+        <p class="fil-ariane"><a href="index.html">Accueil</a>&gt;<span>Programme</span></p>
+    </section>
+    <div class="zone-onglets">
+        <div class="conteneur-boutons">
+            <button class="bouton-jour actif" data-jour="jour1">Jour 1(15 Octobre)</button>
+            <button class="bouton-jour" data-jour="jour2">Jour 2(16 Octobre)</button>
+            <button class="bouton-jour" data-jour="jour3">Jour 3(17 Octobre)</button>
+        
+        </div>
+        <div id="jour1" class="container-tab active">
+            <table class="tableau-planning">
+                <thead>
+                    <tr>
+                        <th>Heure</th>
+                        <th>Session</th>
+                        <th>intervenant</th>
+                        <th>Salle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>08:30 - 09:30</td><td>Accueil et Enregistrement</td><td>Organisation</td><td>Hall principal</td></tr>
+                    <tr><td>09:30 - 11:30</td><td>Keynote d'ouverture : L'Afrique Tech de demain</td><td>Khadija Fall</td><td>Amphi A</td></tr>
+                    <tr><td>11:30 - 13:30</td><td>Table rond : Financer son projet en Afrique</td><td>Ahmerd Ndiaye</td><td>Salle Vision</td></tr>
+                    <tr><td>14:30 - 16:00</td><td>Atelier : L'Intellignence Artificielle locale</td><td>Abdou Karim</td><td>Lab Info</td></tr>
+                    <tr><td>16:30 - 18:00</td><td>Session de Mentorat : Lancer sa startup</td><td>Jean</td><td>Salle Design</td></tr>
+                </tbody>
+
+            </table>
+
+        </div>
+        <div id="jour2" class="container-tab">
+            <table class="tableau-planning">
+                <thead>
+                    <tr>
+                        <th>Heure</th>
+                        <th>Session</th>
+                        <th>intervenant</th>
+                        <th>Salle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>09:00 - 10:00</td><td>Ouverture des portes du jous 2</td><td>Organisation</td><td>Hall principal</td></tr>
+                    <tr><td>10:30 - 11:30</td><td>Atelier pratique : Révolution de la fintech</td><td>Ibrahima Gningue</td><td>Lab Info</td></tr>
+                    <tr><td>11:30 - 13:30</td><td>Conférence : L'inclusion bancaire mobile</td><td>Ahmed Ndiaye</td><td>Amphi A</td></tr>
+                    <tr><td>14:30 - 16:00</td><td>Masterclass : L'avenir de l'UI/UX Design</td><td>Aissatou Wory Diao</td><td>Salle Design</td></tr>
+                    <tr><td>16:30 - 18:00</td><td>Débat : La souveraineté des données africaines</td><td>Jean</td><td>Salle Vision</td></tr>
+                </tbody>
+
+            </table>
+
+        </div>
+        <div id="jour3" class="container-tab">
+            <table class="tableau-planning">
+                <thead>
+                    <tr>
+                        <th>Heure</th>
+                        <th>Session</th>
+                        <th>intervenant</th>
+                        <th>Salle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>09:30 - 10:30</td><td>Conférence : Cybersécurité et infrastructures</td><td>Jean</td><td>Amphi A</td></tr>
+                    <tr><td>11:00 - 12:30</td><td>Les métiers du Web en Afrique pour 2026</td><td>Aissatou Woury Diao</td><td>Salle Design</td></tr>
+                    <tr><td>14:00 - 15:30</td><td>Pitch de Startups devant les investisseurs</td><td>Jury AfriConnect</td><td>Hall principal</td></tr>
+                    <tr><td>15:30 - 17:00</td><td>Remise des prix du Hackathon</td><td>Sponsors</td><td>Hall principal</td></tr>
+                    <tr><td>17:30 - 18:00</td><td>Cérémonie de clôture et de remerciements</td><td>Organisation</td><td>Amphi A</td></tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+    <section class="section-thematiques">
+        <h2>Les 4 Thématiques de Conférence</h2>
+        <div class="grille-thematiques">
+            <!--thématique 1-->
+            <div class="bloc-thematique">
+            <div class="icon-theme"><i class="bi bi-cpu"></i></div>
+            <h3>Intelligence Artificielle</h3>
+            <p>Comprendre l'impact et le développement des modèles d'IA sur le continent africain.</p>
+        </div>
+         <!--thématique 2-->
+         <div class="bloc-thematique">
+            <div class="icon-theme"><i class="bi bi-wallet2"></i></div>
+            <h3>Fintech &amp; Business</h3>
+            <p>Découvrir les nouvelles solutions de paiement mobile et de financement pour les startups.</p>
+         </div>
+        <!--thématique 3-->
+         <div class="bloc-thematique">
+            <div class="icon-theme"><i class="bi bi-palette"></i></div>
+            <h3>Web Design &amp; UI/UX</h3>
+            <p>Apprendre à concevoir des interfaces modernes, fluides et adaptées aux utilisateurs.</p>
+         </div>
+         <!--thématique 4-->
+         <div class="bloc-thematique">
+            <div class="icon-theme"><i class="bi bi-shield-lock"></i></div>
+            <h3>Cybersécurité</h3>
+            <p>Savoir protéger les données locales et sécuriser les infrastructures de demain.</p>
+         </div>
+        </div>
+    </section>
+</main>
+    <!--pied de la page-->
+    <footer class="footer-container">
+        <div class="footer-col">
+            <h2>AfriConnect Summit 2026</h2>
+            <p>Le sommet de l'innovation Africaine.<br>15-17 Octobre 2026 - Medina Dakar</p>
+        </div>
+        <div class="footer-col">
+            <h2>Liens utiles</h2>
+            <a href="index.html">Accueil</a><br>
+            <a href="programme.html">Programme</a><br>
+            <a href="intervenants.html">Intervenants</a><br>
+            <a href="contact.html">Contact</a>
+
+        </div>
+        <div class="footer-col">
+            <h2>Contact & Réseaux</h2>
+                <div class="social-icons">
+            <p>Email: contact@africonnect.sn</p>
+            <p>Téléphone: +221 77 200 00 00</p>
+            <div class="reseaux">
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            </div>
+            </div>
+        </div>
+            </footer>
+            <!--boutton qui remonte en haute dela page-->
+          <button id="btn-top">⬆️</button>
+    <div class="footer-bottom">
+            <p>&copy;<span id="annee"></span>AfriConnect Summit.Tous droits réservés</p>
+            
+        </div>
     <script src="js/main.js"></script>
 </body>
 </html>
