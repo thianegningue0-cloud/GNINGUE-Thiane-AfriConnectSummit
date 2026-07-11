@@ -8,6 +8,156 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
 </head>
 <body>
+        <header class="main-header">
+        <nav class="navbar">
+            <img src="images/africonnecte.jpg" alt="africonnecte.jpg">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html" class="active">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="theme-toggle" aria-label="Changer de thème">🌙</button></li>
+            </ul>
+            </nav>
+    </header>
+    <main>
+        <!--hero interne-->
+        <section class="hero-interne">
+            <h1>Nos Intervenants Vedettes</h1>
+            <p class="fil-ariane"><a href="index.html">Accueil</a>&gt;<span>Intervenants</span></p>
+        </section>
+        <!--zone de filtrage dynamique-->
+        <div class="section-filtres">
+            <div class="conteneur-filtres">
+            <button class="--btn-filtre active" data-filtre="tous">Tous</button>
+            <button class="--btn-filtre" data-filtre="ia">IA &amp; Tech</button>
+            <button class="--btn-filtre" data-filtre="business">Business</button>
+            <button class="--btn-filtre" data-filtre="design">Design</button>
+            <button class="--btn-filtre" data-filtre="data">Data</button>
+            </div>
+        </div>
+        <!--grille des 9 intervenants-->
+        <section class="section-grille-intervenants">
+        <div class="grille-intervenents-complete">
+            <!--intervenants 1-->
+            <div class="carte-intervenant" data-categorie="ia">
+                <div class="photo">
+                    <img src="images/khadija.jpg" alt="Khadija">
+                </div>
+                <h2>Khadija Fall</h2>
+                    <p class="titre">CEO TechAfrik</p>
+                    <p class="pays">Sénégal</p>
+                 </div>
+                 <!--intervenants 2-->
+            <div class="carte-intervenant" data-categorie="design">
+                <div class="photo">
+                    <img src="images/image7.jpg" alt="Mariéme">
+                </div>
+                <h2>Mariéme Diop</h2>
+                    <p class="titre">Développeuse Web /UX Designer</p>
+                    <p class="pays">Mali</p>
+                 </div>
+                 <!--intervenants 3-->
+            <div class="carte-intervenant" data-categorie="business">
+                <div class="photo">
+                    <img src="images/ahmed.jpg" alt="Ahmed">
+                </div>
+                <h2>Ahmed Ndiaye</h2>
+                    <p class="titre">CEO Fintech Hub</p>
+                    <p class="pays">Sénégal</p>
+                 </div>
+                 <!--intervenants 4-->
+            <div class="carte-intervenant" data-categorie="business">
+                <div class="photo">
+                    <img src="images/aissatou.jpg" alt="Aissatou">
+                </div>
+                <h2>Aissatou Woury Diao</h2>
+                    <p class="titre">Orange Digital</p>
+                    <p class="pays">Canada</p>
+                 </div>
+                 <!--intervenants 5-->
+            <div class="carte-intervenant" data-categorie="data">
+                <div class="photo">
+                    <img src="images/image3.jpg" alt="Aicha">
+                </div>
+                <h2>Aicha Gningue</h2>
+                    <p class="titre">Analyste de Données / Data Analyst</p>
+                    <p class="pays">Côte d'Ivoire</p>
+                
+            
+                 </div>
+                 <!--intervenants 6-->
+            <div class="carte-intervenant" data-categorie="design">
+                <div class="photo">
+                    <img src="images/jean.jpg" alt="Jean">
+                </div>
+                <h2>Jean</h2>
+                    <p class="titre">Fondateur & Design Director</p>
+                    <p class="pays">France</p>
+                 </div>
+                 <!--intervenants 7-->
+            <div class="carte-intervenant" data-categorie="ia">
+                <div class="photo">
+                    <img src="images/image4.jpg" alt="Nathalie">
+                </div>
+                <h2>Nathalie</h2>
+                    <p class="titre">Expert en IA</p>
+                    <p class="pays">Cameroun</p>
+                 </div>
+                 <!--intervenants 8-->
+            <div class="carte-intervenant" data-categorie="data">
+                <div class="photo">
+                    <img src="images/image1.jpg" alt="Peaul D">
+                </div>
+                <h2>Peaul D</h2>
+                    <p class="titre">Ingénieure Machine Learning</p>
+                    <p class="pays">Ghana</p>
+                 </div>
+                 <!--intervenants 9-->
+            <div class="carte-intervenant" data-categorie="ia">
+                <div class="photo">
+                    <img src="images/imageT.jpg" alt="Mouhamed">
+                </div>
+                <h2>Mouhamed Gassama</h2>
+                    <p class="titre">Chercheur en Vision par Ordinateur</p>
+                    <p class="pays">Togo</p>
+                 </div>
+                </div>
+            </section>
+        </main>
+    <!--pied de la page-->
+    <footer class="footer-container">
+        <div class="footer-col">
+            <h2>AfriConnect Summit 2026</h2>
+            <p>Le sommet de l'innovation Africaine.<br>15-17 Octobre 2026 - Medina Dakar</p>
+        </div>
+        <div class="footer-col">
+            <h2>Liens utiles</h2>
+            <a href="index.html">Accueil</a><br>
+            <a href="programme.html">Programme</a><br>
+            <a href="intervenants.html">Intervenants</a><br>
+            <a href="contact.html">Contact</a>
+
+        </div>
+        <div class="footer-col">
+            <h2>Contact &amp; Réseaux</h2>
+                <div class="social-icons">
+            <p>Email: contact@africonnect.sn</p>
+            <p>Téléphone: +221 77 200 00 00</p>
+            <div class="reseaux">
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            </div>
+            </div>
+        </div>
+            </footer>
+            <!--boutton qui remonte en haute dela page-->
+          <button id="btn-top" aria-label="Remonter en haute de la page">⬆️</button>
+    <div class="footer-bottom">
+            <p>&copy;<span id="annee"></span>AfriConnect Summit.Tous droits réservés</p>
+            
+        </div>
     <script src="js/main.js"></script>
 </body>
 </html>
