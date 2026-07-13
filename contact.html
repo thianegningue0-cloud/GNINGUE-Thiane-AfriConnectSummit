@@ -8,6 +8,201 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <header class="main-header">
+        <nav class="navbar">
+            <img src="images/africonnecte.jpg" alt="africonnecte.jpg">
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><button id="theme-toggle" aria-label="Changer de thème">🌙</button></li>
+            </ul>
+            </nav>
+    </header>
+    <main>
+        <!--hero interne-->
+        <section class="hero-interne">
+            <h1>Inscription &amp; Contact </h1>
+
+               <p class="fil-ariane"><a href="index.html">Accueil</a>&gt; <span>Contact</span></p>
+            </section>
+       <!--section formulaire en deux colonnes-->
+       <div class="section-inscription-contact">
+        <div class="conteneur-deux-colonnes">
+            <article class="colonne-formulaire">
+            <!--colonne gauche : formulaire-->
+        <h2>Formulaire d'inscription</h2>
+        <p>Remplissez les champs ci-dessous pour réserver votre place au sommet à Dakar.</p>
+        <!--novalidate permet de bloquer la validation automatique du navigateur-->
+        <form id="formulaire-inscription" novalidate>
+        <div class="groupe-champ">
+            <label for="nom">Nom complet :</label>
+            <input type="text" id="nom" name="nom" required>
+            <span class="message-erreur" id="erreur-nom"></span>
+
+        </div>
+        <!--champ email-->
+        <div class="groupe-champ">
+            <label for="email">Adresse Email :</label>
+            <input type="email" id="email" name="email" required>
+            <span class="message-erreur" id="erreur-email"></span>
+
+        </div>
+        <!--champ téléphone-->
+        <div class="groupe-champ">
+            <label for="telephone">Téléphone * :</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Ex: 77 122 17 86" required>
+            <span class="message-erreur" id="erreur-telephone"></span>
+           
+        </div>
+        <!--section billet-->
+        <div class="groupe-champ">
+            <label for="ticket">Type de Participants * :</label>
+            <select id="ticket" name="ticket" required>
+                <option value="">Sélectionnez votre billet</option>
+                <option value="graduit">Étudiant (Gratuit)</option>
+                <option value="standard">Standard(15 000 FCFA)</option>
+                <option value="vip">Accès VIP + Networking(60 000)</option>
+            </select>
+            <span class="message-erreur" id="erreur-ticket"></span>
+        </div>
+        <!--selecteur de pays-->
+        <div class="groupe-champ">
+            <label for="pays-africain">Pays Africain * :</label>
+            <select id="pays-africain" name="pays-africain" required>
+                <option value="">Sélectionnez votre pays</option>
+                <option value="SN">Sénégal</option>
+                <option value="CI">Côte d'Ivoire</option>
+                <option value="ML">Mali</option>
+                <option value="GN">Guinée</option>
+                <option value="BF">Burkina Faso</option>
+                <option value="TG">Togo</option>
+                <option value="BJ">Bénin</option>
+                <option value="CM">Cameroun</option>
+                <option value="GA">Gabon</option>
+                <option value="MA">Maroc</option>
+
+            </select>
+            <span class="message-erreur" id="erreur-pays"></span>
+        </div>
+        <!--champ motivation-->
+        <div class="form-group">
+                            <label for="motivation">Message ou Motivations * (20 caract. min)</label>
+                            <textarea id="motivation" name="motivation" rows="5" required></textarea>
+                            <span class="message-erreur" id="erreur-motivation"></span>
+                        </div>
+                        <button type="submit" class=" btn-submit">Envoyer la demande</button>
+                        <div id="success-message" class="hidden-msg"></div>
+        </form>
+        </article>
+        <!--colonne droit : information et carte google maps-->
+        <article class="colonne-infos">
+            <h2>Informations Pratiques</h2>
+            <div class="bloc-info-texte">
+                <p><i class="bi bi-geo-alt-fill"></i> <strong>Lieu :</strong>Medina, Dakar, Sénégal</p>
+                <p><i class="bi bi-calendar-event-fill"></i> <strong>Date :</strong>Du 15 au 17 Octobre 2026</p>
+                <p><i class="bi bi-envelope-fill"></i> <strong>Email :</strong>contact@africain.sn</p>
+                <p><i class="bi bi-telephone-fill"></i><strong>Téléphone :</strong>+221 77 200 00 00</p>
+
+            </div>
+            <!--carte google maps-->
+            <div class="zone-carte">
+                <h3>Localisation de l'événement</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15438.101101166701!2d-17.46050525419229!3d14.682861473010368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1725f3676fa21%3A0x147bc7f1291d491!2zTcOpZGluYSwgRGFrYXI!5e0!3m2!1sfr!2ssn!4v1783647278913!5m2!1sfr!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            </div>
+        </article>
+        </div>
+
+       </div>
+       <!--section FAQ accordéon-->
+       <section class="section-faq">
+        <h2>Foire Aux Questions</h2>
+        <div class="conteneur-accordeon">
+         <div class="bloc-faq">
+            <input type="checkbox" id="faq1" class="declencheur-faq">
+            <label for="faq1" class="titre-faq">Où se déroule le sommet ?</label>
+            <div class="contenu-faq">
+                <p>L'AfriConnect Summit 2026 se tiendra à la Médina, Dakar, Sénégal.</p>
+
+            </div>
+
+         </div>
+
+         <div class="bloc-faq">
+            <input type="checkbox" id="faq2" class="declencheur-faq">
+            <label for="faq2" class="titre-faq">Comment vais-je recevoir mon billet ?</label>
+            <div class="contenu-faq">
+                <p>Après validation du formulaire, un badge numérique avec QR Code vous sera envoyé par email.</p>
+            </div>
+         </div>
+         
+         <div class="bloc-faq">
+            <input type="checkbox" id="faq3" class="declencheur-faq">
+            <label for="faq3" class="titre-faq">Les ateliers pratiques sont-ils gratuits  ?</label>
+            <div class="contenu-faq">
+                <p>Oui, l'accès aux ateliers est inclus dans tous les billets, mais l'inscription en ligne obligatoire.</p>
+
+            </div>
+
+         </div>
+         <div class="bloc-faq">
+            <input type="checkbox" id="faq4" class="declencheur-faq">
+            <label for="faq4" class="titre-faq">Y a-t-il un tarif spécial pour les étudiants ?</label>
+            <div class="contenu-faq">
+                <p>Absolument, le billet "Étudiant" est totalement gratuit sur présentation d'une carte d'étudiant valide.</p>
+
+            </div>
+
+         </div>
+        <div class="bloc-faq">
+            <input type="checkbox" id="faq5" class="declencheur-faq">
+            <label for="faq5" class="titre-faq">Puis-je annuler mon inscription ?</label>
+            <div class="contenu-faq">
+                <p>Oui, vous pouvez annuler ou modifier votre type de participation en nous envoyant un mail au moins 48 heures avant l'événement.</p>
+
+            </div>
+
+         </div>
+            </div>
+         
+       </section>
+    </main>
+    <!--pied de la page-->
+    <footer class="footer-container">
+        <div class="footer-col">
+            <h2>AfriConnect Summit 2026</h2>
+            <p>Le sommet de l'innovation Africaine.<br>15-17 Octobre 2026 - Medina Dakar</p>
+        </div>
+        <div class="footer-col">
+            <h2>Liens utiles</h2>
+            <a href="index.html">Accueil</a><br>
+            <a href="programme.html">Programme</a><br>
+            <a href="intervenants.html">Intervenants</a><br>
+            <a href="contact.html">Contact</a>
+
+        </div>
+        <div class="footer-col">
+            <h2>Contact &amp; Réseaux</h2>
+                <div class="social-icons">
+            <p>Email: contact@africonnect.sn</p>
+            <p>Téléphone: +221 77 200 00 00</p>
+            <div class="reseaux">
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            </div>
+            </div>
+        </div>
+            </footer>
+            <!--boutton qui remonte en haute dela page-->
+          <button id="btn-top" aria-label="Remonter en haut de la page ">⬆️</button>
+    <div class="footer-bottom">
+            <p>&copy;<span id="annee"></span>AfriConnect Summit.Tous droits réservés</p>
+            
+        </div>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
